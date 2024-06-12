@@ -11,4 +11,4 @@ def test_cat(page):
     page.locator("input.gNO89b").first.click()
     page.get_by_text("Картинки").first.click()
   
-    expect(page.get_by_text("Картинки").first).to_have_attribute("selected", "", timeout=30000)
+    expect(page.get_by_text("Картинки").first).to_have_attribute("selected", "", timeout=30e3)
